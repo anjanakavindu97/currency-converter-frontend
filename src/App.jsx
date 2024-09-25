@@ -25,7 +25,7 @@ function App() {
         e.preventDefault();
         //HTTP request
         try {
-            const response = await axios.post('http://localhost:5000/api/convert',
+            const response = await axios.post('https://currencyapp-gvbchfbpcuedf0ha.eastus-01.azurewebsites.net/api/convert',
                 formData
             );
             setResult(response?.data);
